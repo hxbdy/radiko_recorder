@@ -1,4 +1,4 @@
-#概要
+# 概要
 radikoを録音する。
 以下のaptパッケージが必要。
 RaspiZeroWで動作確認済み
@@ -6,8 +6,8 @@ RaspiZeroWで動作確認済み
 ```bash:install
 sudo apt-get install swftools rtmpdump libxml2-utils ffmpeg
 ```
-#USAGE
 
+# USAGE
 ```bash:HowToUse
 bash rec_radiko.sh CH MIN
 ```
