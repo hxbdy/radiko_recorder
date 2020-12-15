@@ -7,7 +7,7 @@ RaspiZeroWで動作確認済み
 sudo apt-get install swftools rtmpdump libxml2-utils ffmpeg
 ```
 
-#経緯
+# 経緯
 20201215以前はrec_radiko.shを使用していた。
 radikoの認証に失敗するようになったためradishに以降した。
 ベースはradishで作成。
