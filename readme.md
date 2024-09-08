@@ -1,17 +1,23 @@
-# ŠT—v
-ƒlƒbƒgƒ‰ƒWƒI‚ğ˜^‰¹‚·‚éB
-ˆÈ‰º‚ÌaptƒpƒbƒP[ƒW‚ª•K—vB
-RaspiZeroW‚Å“®ìŠm”FÏ‚İ
+# æ¦‚è¦
+ãƒãƒƒãƒˆãƒ©ã‚¸ã‚ªã‚’éŒ²éŸ³ã™ã‚‹ã€‚
+Ubuntu 24.04 LTS ã§å‹•ä½œç¢ºèªæ¸ˆã¿
 
+# ä¾å­˜
 ```bash:install
-sudo apt-get install swftools rtmpdump libxml2-utils ffmpeg
+sudo apt install rtmpdump libxml2-utils ffmpeg
 ```
 
-# ŒoˆÜ
-20201215ˆÈ‘O‚Írec_radiko.sh‚ğg—p‚µ‚Ä‚¢‚½B
-radiko‚Ì”FØ‚É¸”s‚·‚é‚æ‚¤‚É‚È‚Á‚½‚½‚ßradish‚ÉˆÈ~‚µ‚½B
-ƒx[ƒX‚Íradish‚Åì¬B
-ƒtƒ@ƒCƒ‹–¼‚ÌƒtƒH[ƒ}ƒbƒg‚ğˆÈ‘O‚Ìrec_radiko.sh‚Æ“ˆê‚µ‚½‚©‚Á‚½‚½‚ßA
-ƒtƒ@ƒCƒ‹–¼‚Ü‚í‚è‚ğ•ÏX‚µ‚Ä‚ ‚éB
+# çµŒç·¯
+20201215ä»¥å‰ã¯rec_radiko.shã‚’ä½¿ç”¨ã—ã¦ã„ãŸã€‚  
+radikoã®èªè¨¼ã«å¤±æ•—ã™ã‚‹ã‚ˆã†ã«ãªã£ãŸãŸã‚radishã«ä»¥é™ã—ãŸã€‚  
+ãƒ™ãƒ¼ã‚¹ã¯radishã§ä½œæˆã€‚  
+ãƒ•ã‚¡ã‚¤ãƒ«åã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’ä»¥å‰ã®rec_radiko.shã¨çµ±ä¸€ã—ãŸã‹ã£ãŸãŸã‚ã€  
+ãƒ•ã‚¡ã‚¤ãƒ«åã¾ã‚ã‚Šã‚’å¤‰æ›´ã—ã¦ã‚ã‚‹ã€‚  
+
 # USAGE
 https://github.com/uru2/radish
+
+TBSãƒ©ã‚¸ã‚ªã‚’ 120 min éŒ²éŸ³ã™ã‚‹
+```bash:install
+./rec_radiko.sh -t radiko -s TBS -d 120
+```
