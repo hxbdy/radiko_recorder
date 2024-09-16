@@ -4,7 +4,7 @@ Ubuntu 24.04 LTS で動作確認済み
 
 # 依存
 ```bash:install
-sudo apt install rtmpdump libxml2-utils ffmpeg
+sudo apt curl install rtmpdump libxml2-utils ffmpeg
 ```
 
 # 経緯
@@ -17,7 +17,7 @@ radikoの認証に失敗するようになったためradishに以降した。
 # USAGE
 https://github.com/uru2/radish
 
-TBSラジオを 120 min 録音する
+TBSラジオを 120 min 録音して指定フォルダへ保存
 ```bash:install
-./rec_radiko.sh -t radiko -s TBS -d 120
+./rec_radiko.sh -t radiko -s TBS -d 120 -o /your/dir/
 ```
