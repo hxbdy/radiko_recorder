@@ -377,13 +377,15 @@ if [ "${type}" = "shiburadi" ]; then
   file_ext="mp3"
 fi
 if [ -z "${output}" ]; then
-  output="${station_id}_$(date +%Y-%m-%d-%H_%M).${file_ext}"
+  # UTC -> JST(UTC+0900)
+  output="${station_id}_$(date -d "+9 hours" +%Y-%m-%d-%H_%M).${file_ext}"
 else
   # Fix file path extension
   echo "${output}" | grep -q -E "\\.${file_ext}$"
   ret=$?
   if [ ${ret} -ne 0 ]; then
-    output="${output}${station_id}_$(date +%Y-%m-%d-%H_%M).${file_ext}"
+    # UTC -> JST(UTC+0900)
+    output="${output}${station_id}_$(date -d "+9 hours" +%Y-%m-%d-%H_%M).${file_ext}"
   fi
 fi
 
