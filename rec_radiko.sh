@@ -444,6 +444,7 @@ fi
 if [ "${type}" = "radiko" ]; then
   ffmpeg \
       -loglevel error \
+      -http_seekable 0 \
       -fflags +discardcorrupt \
       -headers "X-Radiko-Authtoken: ${radiko_authtoken}" \
       -i "${playlist_uri}" \
@@ -456,6 +457,7 @@ if [ "${type}" = "radiko" ]; then
 elif [ "${type}" = "shiburadi" ]; then
   ffmpeg \
       -loglevel error \
+      -http_seekable 0 \
       -fflags +discardcorrupt \
       -i "${playlist_uri}" \
       -acodec copy \
@@ -466,6 +468,7 @@ elif [ "${type}" = "shiburadi" ]; then
 else
   ffmpeg \
       -loglevel error \
+      -http_seekable 0 \
       -fflags +discardcorrupt \
       -i "${playlist_uri}" \
       -acodec copy \
